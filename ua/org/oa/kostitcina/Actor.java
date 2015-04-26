@@ -4,12 +4,10 @@ public class Actor {
 
 	private String who;
 	private String whom;
-	private int horsepower;
 
-	public Actor(String who, String whom, int horsepower) {
+	public Actor(String who, String whom) {
 		this.who = who;
 		this.whom = whom;
-		this.horsepower = horsepower;
 	}
 
 	public void call(Actor x) {
@@ -23,7 +21,7 @@ public class Actor {
 	}
 
 	public void pullFailed() {
-		System.out.println("Вытянуть не может.");
+		System.out.println("Вытянуть не могут\n");
 	}
 
 	public void pullSuccess() {
@@ -44,14 +42,6 @@ public class Actor {
 
 	public void setWhom(String whom) {
 		this.whom = whom;
-	}
-
-	public int getHorsepower() {
-		return horsepower;
-	}
-
-	public void setHorsepower(int horsepower) {
-		this.horsepower = horsepower;
 	}
 
 }
